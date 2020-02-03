@@ -36,11 +36,20 @@ Exemple
 * #### newCol
 This method will automatically setup a new key/values array inside the $table attribute of the class. It will later be used to generate the table.
 
-`colName` - The name of your column, which will become the <tr> tag in your table <theader>.
+`colName` - The name of your column, which will become the tr tag in your theader.
 
-`colValues` - The values of the column, which will become the <td> tags in your table <tbody>.
+`colValues` - The values of the column, which will become the td tags in your tbody.
 
 
 * #### createTable
 This method will return the HTML table with all the values previously setup with newCol(). You can use an echo to display it in your HTML.
 
+`theadClass` - Empty by default. Let you setup the css classes of your thead tag.
+
+`tbodyClass` - Empty by default. Let you setup the css classes of your tbody tag.
+
+`trClass` - Empty by default. Let you setup the css classes of your tr tags.
+
+`trOddClass` - Empty by default. Let you setup the css classes of your odd tr tags.
+
+`trEvenClass` - Empty by default. Let you setup the css classes of your even tr tags.

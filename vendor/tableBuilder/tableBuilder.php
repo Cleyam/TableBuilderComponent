@@ -30,20 +30,20 @@ class TableBuilder
     /**
      * Return the table
      */
-    public function createTable()
+    public function createTable($theadClass='', $tbodyClass='', $trClass='', $trOddClass='odd', $trEvenClass='even')
     {
         $rowLength = 0;
-        $createTable = "<table id='$this->tableId' class='$this->tableClass'><thead><tr>";
+        $createTable = "<table id='$this->tableId' class='$this->tableClass'><thead class='$theadClass'><tr>";
         foreach ($this->table as $key => $val) {
             $createTable .= "<th>$key</th>";
             $rowLength = count($val);
         }
-        $createTable .= "</tr></thead><tbody>";
+        $createTable .= "</tr></thead><tbody class ='$tbodyClass'>";
         for($tdNumber=0; $tdNumber<$rowLength; $tdNumber++){
             if(($tdNumber+1)%2){
-                $createTable .= "<tr class='odd'>";
+                $createTable .= "<tr class='$trOddClass $trClass'>";
             }else{
-                $createTable .= "<tr class='even'>";
+                $createTable .= "<tr class='$trEvenClass $trClass'>";
             }
             foreach($this->table as $td){
                 $createTable .= "<td>$td[$tdNumber]</td>";
