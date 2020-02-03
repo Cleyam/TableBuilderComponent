@@ -7,7 +7,7 @@ This PHP class will help you easily create HTML tables with two methods.
 * Copy the /vendor directory inside your project.
 
 
-## **Working with the Form Validator**
+## **Working with the Table Builder**
 
 To validate a form :
 
