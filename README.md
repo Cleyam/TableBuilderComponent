@@ -9,7 +9,7 @@ This PHP class will help you easily create HTML tables with two methods.
 
 ## **Working with the Table Builder**
 
-To validate a form :
+To create a table :
 
 1-  Require/Include/Autoload the TableBuilder class in your file.
 
